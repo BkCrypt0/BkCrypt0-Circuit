@@ -24,7 +24,7 @@ $ npm install --save-dev
 
 These circuit supply for users proofs what used for **age verification** and **place verification**.
 
-These circuit also provide for admin proofs what used for _update_ **claim tree** and **revoke tree**
+It also provides admin proofs what used for updating **claim tree** and **revoke tree**
 
 ## Generate Proof
 
