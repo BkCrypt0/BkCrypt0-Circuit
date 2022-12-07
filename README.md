@@ -24,16 +24,16 @@ $ npm install --save-dev
 
 These circuit supply for users proofs what used for **age verification** and **place verification**.
 
-It also provides admin proofs what used for updating **claim tree** and **revoke tree**
+It also provides admin proofs what used for _updating_ **claim tree** and **revoke tree**
 
-## Generate Proof
+## Generating Proof
 
 Before generating proof. Please reads [snarkjs docs](https://iden3-docs.readthedocs.io/en/latest/iden3_repos/snarkjs.html) to understand how is it active
 
-- Generate age proof
+### Generating age proof
 
 ```
-cd KYC_circuits/age
+cd src/KYC_circuits/age
 circom kycAge.circom --r1cs --wasm
 ```
 
@@ -69,7 +69,7 @@ Then, run
 snarkjs g16s kycAge.r1cs ../../ptau/powersOfTau28_hez_final_15.ptau  circuit_final.zkey
 snarkjs zkev circuit_final.zkey verification_key.json
 ```
-After that, you need _prepare_ a file **input.json** what have input matching circuit. You can see [BKCrypt0-Server](https://github.com/BkCrypt0/BkCrypto-Server.git) to know how to generate input.
+After that, you need _prepare_ a file **input.json** what have input matching circuit. You can see [BKCrypt0-Server](https://github.com/BkCrypt0/BkCrypt0-Server.git) to know how to generate input.
 
 With a input, you can see [BKCrypt0-FrontEnd](https://github.com/BkCrypt0/BkCrypto-FrontEnd.git) to generate proof. Or you can run
 
@@ -82,7 +82,8 @@ snarkjs g16p circuit_final.zkey witness.wtns proof.json public.json
 
 You will receive proof in file **proof.json**. In addition you also get a **public.json** file containing these that shows everyone that with proof you know the input matches this information.
 
-- With the other proof, you will run similarly.
+### Generating others proof
+- With the other proof, you will run similarly generating age proof.
 
 ## Verifier Contract
 
@@ -94,4 +95,6 @@ snarkjs zkey export solidityverifier circuit_final.zkey verifier.sol
 ```
 
 With other contracts, you will generate it similarly
+
+To use these contract, you can see our [BKCrypt0-Contract](https://github.com/BkCrypt0/BkCrypt0-Contract.git)
 
