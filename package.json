@@ -1,0 +1,23 @@
+{
+  "name": "bkcrypt0circuit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BkCrypt0/BkCrypt0Circuit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BkCrypt0/BkCrypt0Circuit/issues"
+  },
+  "homepage": "https://github.com/BkCrypt0/BkCrypt0Circuit#readme",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7"
+  }
+}

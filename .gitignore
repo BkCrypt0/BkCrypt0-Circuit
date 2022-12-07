@@ -1,0 +1,5 @@
+node_modules/
+ptau/
+circom-linux-amd64
+src/**/*/*/*
+!**/*.circom
