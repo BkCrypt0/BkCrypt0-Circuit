@@ -9,7 +9,7 @@ This project use circuit for generating proof in our service
 ### Clone responsitory and setup environment
 
 ```
-$ git clone git@github.com:BkCrypt0/BkCrypt0Circuit.git
+$ git clone https://github.com/BkCrypt0/BkCrypt0Circuit.git
 $ cd BkCrypt0Circuit
 $ npm install --save-dev
 ```
