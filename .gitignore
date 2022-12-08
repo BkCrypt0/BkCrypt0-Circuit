@@ -1,5 +1,9 @@
 node_modules/
 ptau/
 circom-linux-amd64
-src/**/*/*/*
-!**/*.circom
+src/**/*.r1cs
+src/**/*.zkey
+src/**/*.sol
+src/**/*.json
+src/**/*.wtns
+src/**/*js

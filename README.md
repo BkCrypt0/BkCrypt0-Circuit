@@ -67,9 +67,9 @@ See non-linear constraints appear on terminal. You will download file PowersOfTa
 Then, run
 ```
 snarkjs g16s kycAge.r1cs ../../ptau/powersOfTau28_hez_final_15.ptau  circuit_final.zkey
-snarkjs zkev circuit_final.zkey verification_key.json
 ```
-After that, you need _prepare_ a file **input.json** what have input matching circuit. You can see [BKCrypt0-Server](https://github.com/BkCrypt0/BkCrypt0-Server.git) to know how to generate input.
+#### Generating age proof with input file
+After that, you need _prepare_ a file **input.json** what have input matching circuit. You can see [BKCrypt0-Server](https://github.com/BkCrypt0/BkCrypt0-Server.git) to know how to generate input or access [test](https://github.com/BkCrypt0/BkCrypt0-Circuit/blob/main/test) folder to get example age input.
 
 With a input, you can see [BKCrypt0-FrontEnd](https://github.com/BkCrypt0/BkCrypto-FrontEnd.git) to generate proof. Or you can run
 
