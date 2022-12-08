@@ -1,4 +1,4 @@
-# BkCrypt0-Circuit
+# BkCrypt0Circuit
 
 This project use circuit for generating proof in our service
 
@@ -9,8 +9,8 @@ This project use circuit for generating proof in our service
 ### Clone responsitory and setup environment
 
 ```
-$ git clone git@github.com:BkCrypt0/BkCrypt0-Circuit.git
-$ cd BkCrypt0-Circuit
+$ git clone git@github.com:BkCrypt0/BkCrypt0Circuit.git
+$ cd BkCrypt0Circuit
 $ npm install --save-dev
 ```
 
@@ -69,9 +69,9 @@ Then, run
 snarkjs g16s kycAge.r1cs ../../ptau/powersOfTau28_hez_final_15.ptau  circuit_final.zkey
 ```
 #### Generating age proof with input file
-After that, you need _prepare_ a file **input.json** what have input matching circuit. You can see [BKCrypt0-Server](https://github.com/BkCrypt0/BkCrypt0-Server.git) to know how to generate input or access [test](https://github.com/BkCrypt0/BkCrypt0-Circuit/blob/main/test) folder to get example age input.
+After that, you need _prepare_ a file **input.json** what have input matching circuit. You can see [BKCrypt0Server](https://github.com/BkCrypt0/BkCrypt0Server.git) to know how to generate input or access [test](https://github.com/BkCrypt0/BkCrypt0Circuit/blob/main/test) folder to get example age input.
 
-With a input, you can see [BKCrypt0-FrontEnd](https://github.com/BkCrypt0/BkCrypto-FrontEnd.git) to generate proof. Or you can run
+With a input, you can see [BKCrypt0-Frontend](https://github.com/BkCrypt0/BkCrypt0-Frontend.git) to generate proof. Or you can run
 
 ```
 cd kycAge_js
@@ -96,5 +96,5 @@ snarkjs zkey export solidityverifier circuit_final.zkey verifier.sol
 
 With other contracts, you will generate it similarly
 
-To use these contract, you can see our [BKCrypt0-Contract](https://github.com/BkCrypt0/BkCrypt0-Contract.git)
+To use these contract, you can see our [BKCrypt0SmartContract](https://github.com/BkCrypt0/BkCrypt0SmartContract.git)
 
