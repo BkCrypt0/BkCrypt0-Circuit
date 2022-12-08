@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma circom 2.0.0;
 include "../../lib/util/verifyTree.circom";
 

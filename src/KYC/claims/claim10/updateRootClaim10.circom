@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma circom 2.0.0;
 include "../../../lib/util/verifyTree.circom";
 
@@ -5,6 +6,7 @@ include "../../../lib/util/verifyTree.circom";
     This circuit is used to update new root claim tree with 10 identities
     Inputs: 
         - root
+            root of claim tree after adding 10 identities
         - siblings[10][102]: 
             sibilings[i][102] are siblings of keys[i]
         - enabled[10]: 

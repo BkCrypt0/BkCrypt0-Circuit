@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma circom 2.0.0;
 include "../../../lib/util/verifyTree.circom";
 
@@ -5,6 +6,7 @@ include "../../../lib/util/verifyTree.circom";
     This circuit is used to update new root revoke tree with 3 identities
     Inputs: 
         - root
+            root of revoke tree after revoking 10 identities
         - siblings[3][32]: 
             sibilings[i] are siblings of keys[i]
         - enabled[3]: 
